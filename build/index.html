@@ -9,11 +9,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
-<body class="">
-    <header class="sticky top-0 z-50 bg-slate-200 h-[15vh]  sm:z-50">
-        <div class="flex  justify-between items-center p-5 sticky top">
+<body class=" h-[100vh] w[100vw]">
+    <header class=" sticky top-0 z-50 h[15vh] -webkit-sticky   bg-slate-200   sm:z-50">
+        <div class="flex  justify-between items-center p-5   w-[80wv] ">
                 <p class=" flex space-x-5 p-5 text-3xl font-bold "><img class="w-12 h-12 " src="./WORD.png"> <strong>ZEALIIGHT</strong> </p>
             </p>
+            <div class="relative">
+                <!-- Hidden checkbox to control the toggle -->
+                <input type="checkbox" id="hamburger-toggle" class="peer hidden" />
+            
+                <!-- Hamburger Icon -->
+                <label for="hamburger-toggle" class="lg:hidden p-4 cursor-pointer">
+                  <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </label>
+            
+                <!-- Dropdown Menu (Visible when checkbox is checked) -->
+                <div class="absolute right-0 hidden mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-200 peer-checked:block">
+                  <ul class="py-2 text-gray-700">
+                    <li><a href="#" class="block px-4 py-2 text-sm">About</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm">Teams</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm">Service</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>            
             <div class="flex space-x-32 font-bold text-2xl hidden lg:flex md:hidden ">
                 <p>
                     About
@@ -48,67 +69,67 @@
         </div>
     </section>
     <section class="h-[35vh] bg-white text-black  ">
-        <div class="space-y-10 p-20 ">
-            <p class="lg:text-4xl text-2xl font-bold">Our Zeal to build the <br> better way</p>
-            <p class="lg:text-3xl text-1xl font-light">Our method arose from the need to create custom solutions for each situation. <br><br> We've made a conscious effort to be agile in our operations so that we can <br> <br> create solutions that work.</p>
+        <div class="space-y-10 flex flex-col items-center justify-center p-5">
+            <p class="lg:text-4xl text-2xl font-bold">Our Zeal to build the  better way</p>
+            <p class="lg:text-3xl text-2xl font-light">Our method arose from the need to create custom solutions for each situation. <br> We've made a conscious effort to be agile in our operations so that we can <br> <br> create solutions that work.</p>
         </div>
     </section>
     <section>
-        <div class="flex h-[80vh] w-[100wv]">
-            <div class="relative space-y-14 p-16 bg-zinc-200 w-[50%]  ">
+        <div class="flex h-[60vh] w-[100vw]">
+            <div class="relative space-y-14 p-16 bg-zinc-200 w-[100%]  ">
                 <p class="text-9xl text-gray-500 font-bold ">01</p>
-                <p class="absolute top-24 text-6xl font-bold text-gray-900">Product <br> Development</p>
-              <br><br><br><br>  <p class="text-3xl ">We over a decade experience in Product <br> <br> Development, our team efficiently build viable <br><br> software products for our clients.</p>
+                <p class="absolute top-24 text-4xl lg:text-6xl font-bold text-gray-900">Product <br> Development</p>
+              <br><br>  <p class="text-2xl ">We over a decade experience in Product Development.</p>
                 <p class="text-2xl font-mono text-green-500">Learn More</p>
             </div>
-            <p> <img class=" lg:w-[100%] h-[100%] max-width: 100% height: auto " src="./pete.png"></p>
+            <p> <img class=" lg:w-[100%] h-[100%] max-width: 100%  w-[100%]" src="./pete.png"></p>
         </div>
     </section>
     <section>
-        <div class="flex h-[80vh] w-[100wv]">
-            <div class="w-[50%] h-[50vh]">
-                <p><img class="h-[80vh] w-[100%]" src="./bla.png"></p>
+        <div class="flex h-[60vh] w-[100wv]">
+            <div class="w-[50%] h-[100%]">
+                <p><img class="h-[60vh] w-[100%]" src="./bla.png"></p>
             </div>
             <div class="relative space-y-14 p-16 bg-slate-100 w-[50%]">
                 <p class="text-9xl text-gray-500 font-bold">02</p>
-                <p class="absolute top-24 text-6xl font-bold text-gray-900">UX Research</p>
-                <p class="text-3xl">Our Product Design Unit focuses on in-depth UX <br><br> research to help design your products with the best <br><br> product-market fit.</p>
+                <p class="absolute top-24 text-4xl lg:text-6xl font-bold text-gray-900">UX Research</p>
+                <p class="text-2xl">Our Product Design Unit focuses on in-depth UX .</p>
                 <p class="text-green-500 text-2xl font-mono">Learn More</p>
             </div>
         </div>
     </section>
     <section>
-        <div class="flex h-[80vh] w-[100wv]">
+        <div class="flex h-[60vh] w-[100wv]">
             <div class="relative space-y-14 p-16 bg-slate-100 w-[50%]">
                 <p class="text-9xl text-gray-500 font-bold">03</p>
-                <p class="absolute top-24 text-6xl font-bold text-gray-900">I.T Consultancy</p>
-                <p class="text-3xl">Leverage our experience in both business <br><br> development, growth hacking, product <br><br> development and startups by engaging our <br><br> consultancy services.</p>
+                <p class="absolute top-24 text-4xl lg:text-6xl font-bold text-gray-900">I.T Consultancy</p>
+                <p class="text-3xl">Leverage our experience in both business development.</p>
                 <p class="text-green-500 text-2xl font-mono">Learn More</p>
             </div>
             <div class="w-[50%] h-[50vh]">
-                <p><img class="h-[80vh] w-[100%]" src="./ikem.png" ></p>
+                <p><img class="h-[80vh] w-[100%] " src="./ikem.png" ></p>
             </div>
         </div>
     </section>
     <section>
-        <div class="flex h-[80vh] w-[100wv]">
+        <div class="flex h-[60vh] w-[100wv]">
             <div class="w-[50%] h-[50vh]">
                 <p><img class="h-[80vh] w-[100%]" src="./ruth.png"></p>
             </div>
             <div class="relative space-y-14 p-16 bg-slate-100 w-[50%]">
                 <p class="text-9xl text-gray-500 font-bold">04</p>
-                <p class="absolute top-24 text-6xl font-bold text-gray-900">Quality Assurance</p>
-                <p class="text-3xl">Rethink your company's offering with a digital-first <br><br> strategy, make procedures more efficient, and <br><br> improve client experiences.</p>
+                <p class="absolute top-24 text-4xl lg:text-6xl font-bold text-gray-900">Quality Assurance</p>
+                <p class="text-3xl">Rethink your company's offering with a digital-first  strategy.</p>
                 <p class="text-green-500 text-2xl font-mono">Learn More</p>
             </div>
         </div>
     </section>
     <section>
-        <div class="flex h-[80vh] w-[100wv]">
+        <div class="flex h-[60vh] w-[100wv]">
             <div class="relative space-y-14 p-16 bg-slate-100 w-[50%]">
                 <p class="text-9xl text-gray-500 font-bold">05</p>
-                <p class="absolute top-24 text-6xl font-bold text-gray-900">Mobile App Development</p>
-                <p class="text-3xl">Create mobile apps with excellent usability and <br><br> unique features, whether they are native or hybrid <br><br> (cross-platform).</p>
+                <p class="absolute top-24 text-4xl lg:text-6xl   font-bold text-gray-900">Mobile App Development</p>
+                <p class="text-3xl">Create mobile apps with excellent usability .</p>
                 <p class="text-green-500 text-2xl font-mono">Learn More</p>
             </div>
             <div class="w-[50%] h-[50vh]">
@@ -123,8 +144,8 @@
             </div>
             <div class="relative space-y-14 p-16 bg-slate-100 w-[50%]">
                 <p class="text-9xl text-gray-500 font-bold">06</p>
-                <p class="absolute top-24 text-6xl font-bold text-gray-900">Talent Outsourcing</p>
-                <p class="text-3xl">Get well trained and experienced Developers,<br><br> Designers and Managers for your team on full-time <br><br> or co-managed basis.</p>
+                <p class="absolute top-24 text-4xl lg:text-6xl font-bold text-gray-900">Talent Outsourcing</p>
+                <p class="text-3xl">Get well trained and experienced Developers Designers and Managers for your team on full-time.</p>
                 <p class="text-green-500 text-2xl font-mono">Learn More</p>
             </div>
         </div>
@@ -134,32 +155,32 @@
     </section>
     <section>
         <div class="relative bg-[url('https://d2csxpduxe849s.cloudfront.net/media/65648996-5F4D-4D8F-9652A9EBF332D07B/00566C18-97D6-468D-94DC229C840006FB/407B2AFD-2623-4F2A-89E8EDD68049A750/Large-GettyImages-1342421368.jpg')] bg-no-repeat bg-cover h-[90vh] w-[100%]">
-            <div class=" border bg-white flex flex-col justify-center items-center text-blue-950 absolute top-36 left-96  data-aos='zoom in'  h-[40vh] w-[65%] space-y-10">
-              <p class="text-8xl font-sans">Its a collaboration</p>
-              <p class="text-3xl">Our goal is a full partnership. Prior to developing a single line of code, we examine problems,<br><br> business models, and objectives. This guarantees that the best solution will be produced on our <br><br> route to success.</p>  
+            <div class=" border bg-white flex flex-col justify-center items-center text-blue-950 absolute top-28 left-28 data-aos='zoom in'  h-[40vh] w-[65%] space-y-10">
+              <p class="text-4xl font-sans">Its a collaboration</p>
+              <p class="text-2xl">Our goal is a full partnership. Prior to developing a single line of code, we examine problems, business models.</p>  
             </div>
         </div>
     </section>
     <section><div class="bg-white h-[15vh]"></div></section>
     <section>
         <div class="flex justify-evenly items-center bg-slate-100 h-[30vh]">
-            <div class="text-4xl">
+            <div class="text-3xl">
                 <p> Have a project? <br><br class="font-bold">Let's talk about it</p>
             </div>
-            <div class="rounded-full bg-blue-950 text-white p-3 w-[10%] text-center h-[5vh] font-bold text-2xl hover:bg-blue-500">
+            <div class="rounded-full bg-blue-950 text-white p-3 w-[25%] text-center h-[5vh] font-bold text-1xl hover:bg-blue-500">
                 <p>CONTACT US</p>
             </div>
         </div>
     </section>
     <section>
-        <div class="h-[50vh] bg-blue-950 text-white flex justify-evenly items-center">
+        <div class="h-[50vh] bg-blue-950 text-white flex justify-evenly items-center space-x-5">
             <div>
-                <p class=" flex space-x-5 p-5 text-3xl font-bold "><img class="w-14 h-14 " src="./WORD.png"> <strong>ZEALIIGHT</strong> </p>
+                <p class=" flex space-x-3 text-2xl font-bold "><img class="w-12 h-12" src="./WORD.png"> <strong>ZEALIIGHT</strong> </p>
                 <br>
-                <p class="text-3xl font-light">We have the zeal to make and build it better</p>
+                <p class="text-2xl font-light">We have the zeal to make and build </p>
             </div>
-            <div>
-                <p class="text-gray-600 text-4xl">Company</p>
+            <div class="hidden">
+                <p class="text-gray-600 text-3xl">Company</p>
                 <br>
                 <p class="text-2xl">About Us</p>
                 <p class="text-2xl">Services</p>
@@ -167,7 +188,7 @@
                 <p class="text-2xl">Blog</p>
             </div>
             <div>
-                <p class="text-gray-600 text-4xl">Contact Us</p>
+                <p class="text-gray-600 text-3xl">Contact Us</p>
                 <br>
                 <p class="text-2xl">FAQs</p>
                 <br>
